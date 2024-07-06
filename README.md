@@ -1,6 +1,5 @@
 # Netflix Clone
 
-A new Flutter project.
 ![1](https://github.com/ardakuvanc3/Flutter-Netflix-Clone/assets/122490388/dba25642-ffb6-4d5a-988b-f244e06dc734)
 
 
