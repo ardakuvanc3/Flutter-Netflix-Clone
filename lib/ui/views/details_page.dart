@@ -3,8 +3,7 @@ import 'package:netflix_clone/data/entity/films.dart';
 import 'package:netflix_clone/ui/colors/colors.dart';
 
 class DetailPage extends StatefulWidget {
-
-  Films film;
+  final Films film;
 
   DetailPage({required this.film});
 
@@ -16,13 +15,29 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(leading: BackButton(color: Colors.white,),title: Text(widget.film.name, style: const TextStyle(color: Colors.white),),backgroundColor: mainRed,),
+      appBar: AppBar(
+        leading: BackButton(color: Colors.white),
+        title: Text(widget.film.name, style: const TextStyle(color: Colors.white)),
+        backgroundColor: mainRed,
+      ),
       backgroundColor: background,
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset("images/${widget.film.image}"),
-            Text("${widget.film.time} min", style: const TextStyle(fontSize: 50, color: Colors.white), )
+            Center(
+              child: Text(
+                widget.film.description,
+                style: TextStyle(color: Colors.white, fontSize: 24),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Text(
+              "${widget.film.time} min",
+              style: const TextStyle(fontSize: 20, color: Colors.white),
+            ),
           ],
         ),
       ),

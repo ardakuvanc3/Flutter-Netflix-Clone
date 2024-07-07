@@ -17,12 +17,12 @@ Future<void> search(String searchWord) async {
 
 Future<List<Films>> uploadFilms() async {
   var filmList = <Films>[];
-  var f1 = Films(id: 1, image: "django.png" , name:"Django" , time:165 );
-  var f2 = Films(id: 2, image: "inception.png" , name:"İnception" , time:148 );
-  var f3 = Films(id: 3, image: "interstellar.png" , name:"İnterstellar" , time:169 );
-  var f4 = Films(id: 4, image: "thepianist.png" , name:"The Pianist" , time:150 );
-  var f5 = Films(id: 5, image: "thehatefuleight.png" , name:"The Hateful Eight" , time: 187 );
-  var f6 = Films(id: 6, image: "anadoluda.png" , name:"Anadoluda" , time:157 );
+  var f1 = Films(id: 1, image: "django.png" , name:"Django" , time:165,description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" );
+  var f2 = Films(id: 2, image: "inception.png" , name:"İnception" , time:148, description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s");
+  var f3 = Films(id: 3, image: "interstellar.png" , name:"İnterstellar" , time:169, description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" );
+  var f4 = Films(id: 4, image: "thepianist.png" , name:"The Pianist" , time:150 , description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s");
+  var f5 = Films(id: 5, image: "thehatefuleight.png" , name:"The Hateful Eight" , time: 187, description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" );
+  var f6 = Films(id: 6, image: "anadoluda.png" , name:"Anadoluda" , time:157 ,description:  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s");
 
   filmList.add(f1);
   filmList.add(f2);
